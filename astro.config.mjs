@@ -8,7 +8,12 @@ export default defineConfig({
 	integrations: [
 		starlight({
 			title: 'The Dev Guide',
+      logo: {
+        src: './src/assets/logo.webp',
+        alt: 'The Dev Guide'
+      },
 			social: [{ icon: 'github', label: 'GitHub', href: 'https://github.com/withastro/starlight' }],
+			customCss: ['./src/styles/custom.css'],
 			components: {
 				Sidebar: './src/overrides/Sidebar.astro',
 			},
@@ -352,12 +357,7 @@ export default defineConfig({
 ],
 			plugins: [
 				starlightThemeSix({
-					navLinks: [{ // optional
-						label: 'Docs',
-						link: '/getting-started',
-					}],
-					footerText: //optional
-						'Built & designed by [Six](https://six.technology).'
+					
 				})
 			],
 		}),

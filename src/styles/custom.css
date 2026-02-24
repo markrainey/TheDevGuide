@@ -1,0 +1,18 @@
+/* Increase body text size */
+html {
+  font-size: 1.0625rem; /* base was 1rem (16px), this is ~17px */
+}
+
+.sl-markdown-content p:not(:where(.not-content *)) {
+  font-size: 1.0625rem;
+}
+
+.sl-markdown-content li:not(:where(.not-content *)) {
+  font-size: 1.0625rem;
+}
+
+/* Brighter body text in dark mode */
+:root[data-theme='dark'] {
+  --foreground: #e2e5ea; /* was #b9bdc3 */
+  --sl-color-text: #e2e5ea;
+}
