@@ -1,0 +1,219 @@
+---
+const PAGE_TITLE_ID = '_top'
+
+const {
+  entry: {
+    data: { title, template, description, links, rating, ratingCount },
+  },
+} = Astro.locals.starlightRoute
+
+const shouldRenderTitle = template !== 'splash'
+
+// Build star display: filled, half, empty from a 0–5 rating
+function getStars(r: number) {
+  const stars = []
+  for (let i = 1; i <= 5; i++) {
+    if (r >= i) stars.push('full')
+    else if (r >= i - 0.5) stars.push('half')
+    else stars.push('empty')
+  }
+  return stars
+}
+
+const stars = rating ? getStars(rating) : []
+const formattedCount = ratingCount ? ratingCount.toLocaleString('en-GB') : null
+---
+
+{
+  template === 'doc' && (
+    <div class="breadcrumb">
+      <div class="truncate">Docs</div>
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        width="24"
+        height="24"
+        viewBox="0 0 24 24"
+        fill="none"
+        stroke="currentColor"
+        stroke-width="2"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+      >
+        <path d="m9 18 6-6-6-6" />
+      </svg>
+      <div class="text-foreground">{title}</div>
+    </div>
+  )
+}
+
+{shouldRenderTitle && <h1 id={PAGE_TITLE_ID}>{title}</h1>}
+{shouldRenderTitle && description && <p class="description">{description}</p>}
+
+{
+  rating && (
+    <div class="rating">
+      <span class="rating-value">{rating}</span>
+      <span class="stars" aria-label={`${rating} out of 5 stars`}>
+        {stars.map((type) =>
+          type === 'full' ? (
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="star star-full">
+              <polygon points="12,2 15.09,8.26 22,9.27 17,14.14 18.18,21.02 12,17.77 5.82,21.02 7,14.14 2,9.27 8.91,8.26" />
+            </svg>
+          ) : type === 'half' ? (
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="star star-half">
+              <defs>
+                <linearGradient id="half-grad">
+                  <stop offset="50%" stop-color="currentColor" />
+                  <stop offset="50%" stop-color="transparent" />
+                </linearGradient>
+              </defs>
+              <polygon points="12,2 15.09,8.26 22,9.27 17,14.14 18.18,21.02 12,17.77 5.82,21.02 7,14.14 2,9.27 8.91,8.26" fill="url(#half-grad)" stroke="currentColor" stroke-width="1.5"/>
+            </svg>
+          ) : (
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="star star-empty">
+              <polygon points="12,2 15.09,8.26 22,9.27 17,14.14 18.18,21.02 12,17.77 5.82,21.02 7,14.14 2,9.27 8.91,8.26" />
+            </svg>
+          )
+        )}
+      </span>
+      {formattedCount && <span class="rating-count">({formattedCount} reviews)</span>}
+    </div>
+  )
+}
+
+{
+  links && (
+    <div class="links">
+      {links.doc && (
+        <a href={links.doc} target="_blank" rel="noreferrer">
+          Docs
+          <svg xmlns="http://www.w3.org/2000/svg" width="0.75rem" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M15 3h6v6" /><path d="M10 14 21 3" /><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6" />
+          </svg>
+        </a>
+      )}
+      {links.api && (
+        <a href={links.api} target="_blank" rel="noreferrer">
+          API
+          <svg xmlns="http://www.w3.org/2000/svg" width="0.75rem" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M15 3h6v6" /><path d="M10 14 21 3" /><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6" />
+          </svg>
+        </a>
+      )}
+    </div>
+  )
+}
+
+<style>
+  .breadcrumb {
+    color: var(--muted-foreground);
+    line-height: 1;
+    font-size: 0.875rem;
+    align-items: center;
+    display: flex;
+    margin-bottom: 1rem;
+  }
+
+  .truncate {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
+  .breadcrumb svg {
+    width: 0.875rem;
+    height: 0.875rem;
+    margin-left: 0.5rem;
+  }
+
+  .text-foreground {
+    color: var(--foreground-light);
+    margin-left: 0.5rem;
+  }
+
+  h1 {
+    color: var(--foreground-light);
+    letter-spacing: -0.025em;
+    font-weight: 800;
+    font-size: 2.875rem;
+    line-height: 3rem;
+    scroll-margin: 5rem;
+    margin: 0;
+  }
+
+  .description {
+    margin: 0.75rem 0 0;
+    color: var(--muted-foreground);
+    font-size: 1.125rem;
+    line-height: 1.75rem;
+    text-wrap: balance;
+  }
+
+  /* Stars */
+  .rating {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    margin-top: 0.75rem;
+  }
+
+  .rating-value {
+    font-weight: 700;
+    font-size: 1rem;
+    color: var(--foreground-light);
+  }
+
+  .stars {
+    display: flex;
+    gap: 0.1rem;
+  }
+
+  .star {
+    width: 1.1rem;
+    height: 1.1rem;
+    color: #f59e0b;
+  }
+
+  .star-full {
+    fill: currentColor;
+    stroke: none;
+  }
+
+  .star-empty {
+    fill: none;
+    stroke: currentColor;
+    stroke-width: 1.5;
+  }
+
+  .rating-count {
+    font-size: 0.875rem;
+    color: var(--muted-foreground);
+  }
+
+  .links {
+    padding-top: 1rem;
+    align-items: center;
+    display: flex;
+  }
+
+  .links > a {
+    transition-property: color, background-color, border-color;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-duration: 0.15s;
+    color: var(--secondary-foreground);
+    font-weight: 600;
+    font-size: 0.75rem;
+    line-height: 1rem;
+    padding: 0.125rem 0.625rem;
+    background-color: var(--secondary);
+    border-radius: calc(var(--radius) - 2px);
+    gap: 0.25rem;
+    align-items: center;
+    display: inline-flex;
+    text-decoration: inherit;
+  }
+
+  .links > a:not(:first-child) {
+    margin-left: 0.5rem;
+  }
+</style>

@@ -16,6 +16,7 @@ export default defineConfig({
 			customCss: ['./src/styles/custom.css'],
 			components: {
 				Sidebar: './src/overrides/Sidebar.astro',
+				PageTitle: './src/overrides/PageTitle.astro',
 			},
 			sidebar: [
   {
