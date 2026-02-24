@@ -9,6 +9,9 @@ export default defineConfig({
 		starlight({
 			title: 'The Dev Guide',
 			social: [{ icon: 'github', label: 'GitHub', href: 'https://github.com/withastro/starlight' }],
+			components: {
+				Sidebar: './src/overrides/Sidebar.astro',
+			},
 			sidebar: [
   {
     label: 'The Craft (Programming & Architecture)',

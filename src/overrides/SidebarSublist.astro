@@ -1,0 +1,165 @@
+---
+import type { StarlightRouteData } from '@astrojs/starlight/route-data'
+
+interface Props {
+  sublist: StarlightRouteData['sidebar']
+  nested?: boolean
+}
+
+const { sublist, nested } = Astro.props
+---
+
+{
+  sublist.map((entry) =>
+    entry.type === 'link' ? (
+      <a
+        href={entry.href}
+        aria-current={entry.isCurrent && 'page'}
+        class:list={['entry-link', entry.attrs.class]}
+        {...entry.attrs}
+      >
+        {entry.label}
+        {entry.badge && <span class="entry-badge">{entry.badge.text}</span>}
+      </a>
+    ) : (
+      <div class="container-sidebar-entry">
+        <button class="entry-title-button" data-group-toggle type="button">
+          <h4 class="entry-title">{entry.label}</h4>
+          <svg
+            class="collapse-icon"
+            xmlns="http://www.w3.org/2000/svg"
+            width="16"
+            height="16"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          >
+            <path d="m6 9 6 6 6-6" />
+          </svg>
+        </button>
+        <div class="container-group-link" data-group-content>
+          <Astro.self sublist={entry.entries} nested />
+        </div>
+      </div>
+    ),
+  )
+}
+
+<style>
+  .container-sidebar-entry {
+    flex-direction: column;
+    display: flex;
+  }
+
+  .container-sidebar-entry.is-expanded {
+    margin-bottom: 1rem;
+  }
+
+  .entry-title-button {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    background: none;
+    border: none;
+    padding: 0.5rem 0;
+    cursor: pointer;
+    color: inherit;
+    font: inherit;
+    text-align: left;
+  }
+
+  .entry-title-button:hover {
+    color: var(--accent-foreground);
+  }
+
+  .entry-title {
+    margin: 0;
+    font-size: 0.875rem;
+    font-weight: 600;
+  }
+
+  .collapse-icon {
+    width: 1rem;
+    height: 1rem;
+    transition: transform 0.2s ease-in-out;
+    flex-shrink: 0;
+  }
+
+  .container-sidebar-entry.collapsed .collapse-icon {
+    transform: rotate(-90deg);
+  }
+
+  .container-group-link {
+    overflow: hidden;
+    max-height: 9999px;
+    opacity: 1;
+  }
+
+  .container-sidebar-entry.collapsed .container-group-link {
+    max-height: 0;
+    opacity: 0;
+    pointer-events: none;
+  }
+</style>
+
+<script>
+  function initSidebar() {
+    const buttons = document.querySelectorAll<HTMLElement>('[data-group-toggle]')
+    console.log('[sidebar] initSidebar called, buttons found:', buttons.length)
+    buttons.forEach((button, idx) => {
+      // The button is always the direct first child of .container-sidebar-entry,
+      // so parentElement is unambiguous and avoids closest() traversal issues
+      const entry = button.parentElement
+      if (!entry) return
+
+      const titleText = button.querySelector('.entry-title')?.textContent?.trim()
+      console.log(`[sidebar] button[${idx}] "${titleText}", parent class="${entry.className}", parent tag="${entry.tagName}"`)
+
+      // Restore collapse state from localStorage
+      if (titleText) {
+        const isCollapsed = localStorage.getItem(`sidebar-${titleText}`) === 'true'
+        if (isCollapsed) {
+          entry.classList.add('collapsed')
+          entry.classList.remove('is-expanded')
+        } else {
+          entry.classList.remove('collapsed')
+          entry.classList.add('is-expanded')
+        }
+      }
+
+      // Attach click handler directly to the button — guard against double
+      // registration when astro:page-load re-runs on the same DOM nodes
+      if (button.dataset.sidebarInit) {
+        console.log(`[sidebar] button[${idx}] "${titleText}" already initialized, skipping`)
+        return
+      }
+      button.dataset.sidebarInit = 'true'
+
+      button.addEventListener('click', () => {
+        console.log(`[sidebar] click on "${titleText}", entry classes BEFORE:`, [...entry.classList])
+        entry.classList.toggle('collapsed')
+        entry.classList.toggle('is-expanded')
+        console.log(`[sidebar] click on "${titleText}", entry classes AFTER:`, [...entry.classList])
+
+        if (titleText) {
+          localStorage.setItem(`sidebar-${titleText}`, entry.classList.contains('collapsed').toString())
+        }
+      })
+    })
+  }
+
+  // Capture-phase: log what ACTUALLY gets clicked (runs before any handler)
+  document.addEventListener('click', (e) => {
+    const t = e.target as Element
+    console.log('[capture-click] tag:', t.tagName, 'class:', t.className.toString().substring(0,60), 'href:', (t as HTMLAnchorElement).href || 'none')
+  }, true)
+
+  // DOMContentLoaded — fires on every full page load (no View Transitions)
+  document.addEventListener('DOMContentLoaded', initSidebar)
+  // astro:page-load — fires after each View Transition navigation (future-proof)
+  document.addEventListener('astro:page-load', initSidebar)
+</script>
