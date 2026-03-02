@@ -14,351 +14,146 @@ export default defineConfig({
       },
 			social: [{ icon: 'github', label: 'GitHub', href: 'https://github.com/withastro/starlight' }],
 			customCss: ['./src/styles/custom.css'],
+			markdown: { headingLinks: false },
 			components: {
 				Sidebar: './src/overrides/Sidebar.astro',
 				PageTitle: './src/overrides/PageTitle.astro',
 			},
 			sidebar: [
   {
-    label: 'The Craft (Programming & Architecture)',
+    label: 'The AI-Native Stack',
     items: [
-      { label: 'Overview', slug: 'thecraftprogrammingarchitecture' },
+      { label: 'Overview', slug: 'ainative' },
       {
-        label: 'Language & Runtime Deep-Dives',
+        label: 'Foundational Models',
         items: [
-          { label: 'Overview', slug: 'thecraftprogrammingarchitecture/languageruntimedeep-dives' },
-          { label: 'The Clean Coder: A Code of Conduct for Professional Programmers', slug: 'thecraftprogrammingarchitecture/languageruntimedeep-dives/c159c9e0-3c08-4bdf-bc4d-19a39b32c0cc' },
-          {
-            label: 'Systems Programming (Rust/Go)',
-            items: [
-              { label: 'Overview', slug: 'thecraftprogrammingarchitecture/languageruntimedeep-dives/systemsprogrammingrustgo' },
-              {
-                label: 'Modern JavaScript/TypeScript',
-                items: [
-                  { label: 'Overview', slug: 'thecraftprogrammingarchitecture/languageruntimedeep-dives/systemsprogrammingrustgo/modernjavascripttypescript' },
-                  { label: 'Python Mega Course: Build 20 Real-World Apps and AI Agents', slug: 'thecraftprogrammingarchitecture/languageruntimedeep-dives/systemsprogrammingrustgo/modernjavascripttypescript/a3530853-1a13-459f-b775-6c7f0fdf423e' },
-                ],
-              },
-            ],
-          },
-          {
-            label: 'Python',
-            items: [
-              { label: 'Overview', slug: 'thecraftprogrammingarchitecture/languageruntimedeep-dives/python' },
-              { label: '100 Days of Code: The Complete Python Pro Bootcamp', slug: 'thecraftprogrammingarchitecture/languageruntimedeep-dives/python/11fbb6f6-7e62-4610-a4f4-5ae76e312eb2' },
-            ],
-          },
-          {
-            label: 'C# / .NET',
-            items: [
-              { label: 'Overview', slug: 'thecraftprogrammingarchitecture/languageruntimedeep-dives/cnet' },
-              { label: 'CLR via C# (Developer Reference)', slug: 'thecraftprogrammingarchitecture/languageruntimedeep-dives/cnet/0a83189c-a7ac-4e47-88e0-8786525e4da5' },
-            ],
-          },
+          { label: 'Overview', slug: 'ainative/foundationalmodels' },
         ],
       },
       {
-        label: 'Design Patterns & Architecture',
+        label: 'AI-Native IDEs and Assistants',
         items: [
-          { label: 'Overview', slug: 'thecraftprogrammingarchitecture/designpatternsarchitecture' },
-          { label: 'Design Microservices Architecture with Patterns & Principles', slug: 'thecraftprogrammingarchitecture/designpatternsarchitecture/bd5460b3-92c5-42d6-83dd-fd7610692d37' },
-          { label: 'Designing Data–Intensive Applications: Big Ideas Behind Reliable, Scalable, and Maintainable Systems', slug: 'thecraftprogrammingarchitecture/designpatternsarchitecture/718b7433-9074-460c-ad2e-cef647fbfef4' },
-          {
-            label: 'Modular Monoliths to Microservices',
-            items: [
-              { label: 'Overview', slug: 'thecraftprogrammingarchitecture/designpatternsarchitecture/modularmonolithstomicroservices' },
-            ],
-          },
-          {
-            label: 'Structural Patterns',
-            items: [
-              { label: 'Overview', slug: 'thecraftprogrammingarchitecture/designpatternsarchitecture/structuralpatterns' },
-            ],
-          },
-          {
-            label: 'Reactive & Event-Driven Logic',
-            items: [
-              { label: 'Overview', slug: 'thecraftprogrammingarchitecture/designpatternsarchitecture/reactiveevent-drivenlogic' },
-            ],
-          },
+          { label: 'Overview', slug: 'ainative/ai-nativeidesandassistants' },
         ],
       },
       {
-        label: 'Algorithms & Data Structures (Applied)',
+        label: 'The Model Context Protocol',
         items: [
-          { label: 'Overview', slug: 'thecraftprogrammingarchitecture/algorithmsdatastructuresapplied' },
-          {
-            label: 'Performance Optimization',
-            items: [
-              { label: 'Overview', slug: 'thecraftprogrammingarchitecture/algorithmsdatastructuresapplied/performanceoptimization' },
-            ],
-          },
-          {
-            label: 'Graph Theory & Vector Math',
-            items: [
-              { label: 'Overview', slug: 'thecraftprogrammingarchitecture/algorithmsdatastructuresapplied/graphtheoryvectormath' },
-            ],
-          },
-          {
-            label: 'State Management Theory',
-            items: [
-              { label: 'Overview', slug: 'thecraftprogrammingarchitecture/algorithmsdatastructuresapplied/statemanagementtheory' },
-            ],
-          },
+          { label: 'Overview', slug: 'ainative/themodelcontextprotocol' },
+        ],
+      },
+      {
+        label: 'Local LLMs and Private Infrastructure',
+        items: [
+          { label: 'Overview', slug: 'ainative/localllmsandprivateinfrastructure' },
         ],
       },
     ],
   },
   {
-    label: 'The Stack (Technology & Integration)',
+    label: 'AI-Augmented SDLC',
     items: [
-      { label: 'Overview', slug: 'thestacktechnologyintegration' },
+      { label: 'Overview', slug: 'aisdlc' },
       {
-        label: 'AI Integration & Agentic Frameworks',
+        label: 'Planning and Requirements',
         items: [
-          { label: 'Overview', slug: 'thestacktechnologyintegration/aiintegrationagenticframeworks' },
-          { label: 'The Rise of The Claw with OpenClaw\'s Peter Steinberger', slug: 'thestacktechnologyintegration/aiintegrationagenticframeworks/c903e74a-c8c1-4d96-977f-d0e21eca24fb' },
-          { label: 'From idea to pull request: A practical guide to building with GitHub Copilot CLI', slug: 'thestacktechnologyintegration/aiintegrationagenticframeworks/46ebf64f-423c-471a-bb81-776ffe245056' },
-          {
-            label: 'LLM Orchestration',
-            items: [
-              { label: 'Overview', slug: 'thestacktechnologyintegration/aiintegrationagenticframeworks/llmorchestration' },
-            ],
-          },
-          {
-            label: 'Retrieval-Augmented Generation (RAG)',
-            items: [
-              { label: 'Overview', slug: 'thestacktechnologyintegration/aiintegrationagenticframeworks/retrieval-augmentedgenerationrag' },
-            ],
-          },
-          {
-            label: 'AI Evaluation & Guardrails',
-            items: [
-              { label: 'Overview', slug: 'thestacktechnologyintegration/aiintegrationagenticframeworks/aievaluationguardrails' },
-            ],
-          },
+          { label: 'Overview', slug: 'aisdlc/planningandrequirements' },
         ],
       },
       {
-        label: 'Frontend & Interaction Design',
+        label: 'Intelligent Architecture',
         items: [
-          { label: 'Overview', slug: 'thestacktechnologyintegration/frontendinteractiondesign' },
-          {
-            label: 'Meta-Frameworks',
-            items: [
-              { label: 'Overview', slug: 'thestacktechnologyintegration/frontendinteractiondesign/meta-frameworks' },
-            ],
-          },
-          {
-            label: 'Design Systems & UI Kits',
-            items: [
-              { label: 'Overview', slug: 'thestacktechnologyintegration/frontendinteractiondesign/designsystemsuikits' },
-            ],
-          },
-          {
-            label: 'Accessibility & Inclusive Design',
-            items: [
-              { label: 'Overview', slug: 'thestacktechnologyintegration/frontendinteractiondesign/accessibilityinclusivedesign' },
-            ],
-          },
+          { label: 'Overview', slug: 'aisdlc/intelligentarchitecture' },
         ],
       },
       {
-        label: 'Backend & Cloud Systems',
+        label: 'Implementation',
         items: [
-          { label: 'Overview', slug: 'thestacktechnologyintegration/backendcloudsystems' },
-          {
-            label: 'Backend-as-a-Service (BaaS)',
-            items: [
-              { label: 'Overview', slug: 'thestacktechnologyintegration/backendcloudsystems/backend-as-a-servicebaas' },
-            ],
-          },
-          {
-            label: 'Serverless & Edge Compute',
-            items: [
-              { label: 'Overview', slug: 'thestacktechnologyintegration/backendcloudsystems/serverlessedgecompute' },
-            ],
-          },
-          {
-            label: 'Distributed Systems Reliability',
-            items: [
-              { label: 'Overview', slug: 'thestacktechnologyintegration/backendcloudsystems/distributedsystemsreliability' },
-            ],
-          },
+          { label: 'Overview', slug: 'aisdlc/implementation' },
         ],
       },
       {
-        label: 'Data Architecture & Storage',
+        label: 'Autonomous QA',
         items: [
-          { label: 'Overview', slug: 'thestacktechnologyintegration/dataarchitecturestorage' },
-          {
-            label: 'Modern Relational SQL',
-            items: [
-              { label: 'Overview', slug: 'thestacktechnologyintegration/dataarchitecturestorage/modernrelationalsql' },
-            ],
-          },
-          {
-            label: 'NoSQL & Document Stores',
-            items: [
-              { label: 'Overview', slug: 'thestacktechnologyintegration/dataarchitecturestorage/nosqldocumentstores' },
-            ],
-          },
-          {
-            label: 'Data Lakehouses & Warehousing',
-            items: [
-              { label: 'Overview', slug: 'thestacktechnologyintegration/dataarchitecturestorage/datalakehouseswarehousing' },
-            ],
-          },
+          { label: 'Overview', slug: 'aisdlc/autonomousqa' },
         ],
       },
       {
-        label: 'API Design & Connectivity',
+        label: 'AIOps',
         items: [
-          { label: 'Overview', slug: 'thestacktechnologyintegration/apidesignconnectivity' },
-          {
-            label: 'API Protocols',
-            items: [
-              { label: 'Overview', slug: 'thestacktechnologyintegration/apidesignconnectivity/apiprotocols' },
-            ],
-          },
-          {
-            label: 'Contract-First Development',
-            items: [
-              { label: 'Overview', slug: 'thestacktechnologyintegration/apidesignconnectivity/contract-firstdevelopment' },
-            ],
-          },
-          {
-            label: 'Real-time Streaming',
-            items: [
-              { label: 'Overview', slug: 'thestacktechnologyintegration/apidesignconnectivity/real-timestreaming' },
-            ],
-          },
+          { label: 'Overview', slug: 'aisdlc/aiops' },
         ],
       },
     ],
   },
   {
-    label: 'The Lifecycle (Operations & Growth)',
+    label: 'Engineering Patterns',
     items: [
-      { label: 'Overview', slug: 'thelifecycleoperationsgrowth' },
+      { label: 'Overview', slug: 'patterns' },
       {
-        label: 'DevOps & Deployment',
+        label: 'Agentic Orchestration',
         items: [
-          { label: 'Overview', slug: 'thelifecycleoperationsgrowth/devopsdeployment' },
-          {
-            label: 'Infrastructure as Code (IaC)',
-            items: [
-              { label: 'Overview', slug: 'thelifecycleoperationsgrowth/devopsdeployment/infrastructureascodeiac' },
-            ],
-          },
-          {
-            label: 'CI/CD Pipelines',
-            items: [
-              { label: 'Overview', slug: 'thelifecycleoperationsgrowth/devopsdeployment/cicdpipelines' },
-            ],
-          },
-          {
-            label: 'Containerization',
-            items: [
-              { label: 'Overview', slug: 'thelifecycleoperationsgrowth/devopsdeployment/containerization' },
-            ],
-          },
+          { label: 'Overview', slug: 'patterns/agenticorchestration' },
         ],
       },
       {
-        label: 'Security & Authentication',
+        label: 'Advanced RAG',
         items: [
-          { label: 'Overview', slug: 'thelifecycleoperationsgrowth/securityauthentication' },
-          {
-            label: 'Identity & Access Management (IAM)',
-            items: [
-              { label: 'Overview', slug: 'thelifecycleoperationsgrowth/securityauthentication/identityaccessmanagementiam' },
-            ],
-          },
-          {
-            label: 'Zero-Trust Architecture',
-            items: [
-              { label: 'Overview', slug: 'thelifecycleoperationsgrowth/securityauthentication/zero-trustarchitecture' },
-            ],
-          },
-          {
-            label: 'Compliance & Governance',
-            items: [
-              { label: 'Overview', slug: 'thelifecycleoperationsgrowth/securityauthentication/compliancegovernance' },
-            ],
-          },
+          { label: 'Overview', slug: 'patterns/advancedrag' },
         ],
       },
       {
-        label: 'Testing & Observability',
+        label: 'Evaluation-Driven Development',
         items: [
-          { label: 'Overview', slug: 'thelifecycleoperationsgrowth/testingobservability' },
-          {
-            label: 'Automated Testing Suites',
-            items: [
-              { label: 'Overview', slug: 'thelifecycleoperationsgrowth/testingobservability/automatedtestingsuites' },
-            ],
-          },
-          {
-            label: 'Full-Stack Monitoring',
-            items: [
-              { label: 'Overview', slug: 'thelifecycleoperationsgrowth/testingobservability/full-stackmonitoring' },
-            ],
-          },
-          {
-            label: 'AIOps & Intelligent Alerting',
-            items: [
-              { label: 'Overview', slug: 'thelifecycleoperationsgrowth/testingobservability/aiopsintelligentalerting' },
-            ],
-          },
+          { label: 'Overview', slug: 'patterns/evaluation-drivendevelopment' },
         ],
       },
       {
-        label: 'Developer Productivity & DX',
+        label: 'Context Engineering',
         items: [
-          { label: 'Overview', slug: 'thelifecycleoperationsgrowth/developerproductivitydx' },
-          {
-            label: 'AI-Enhanced Workflows',
-            items: [
-              { label: 'Overview', slug: 'thelifecycleoperationsgrowth/developerproductivitydx/ai-enhancedworkflows' },
-            ],
-          },
-          {
-            label: 'The Modern Terminal',
-            items: [
-              { label: 'Overview', slug: 'thelifecycleoperationsgrowth/developerproductivitydx/themodernterminal' },
-            ],
-          },
-          {
-            label: 'Documentation Systems',
-            items: [
-              { label: 'Overview', slug: 'thelifecycleoperationsgrowth/developerproductivitydx/documentationsystems' },
-            ],
-          },
+          { label: 'Overview', slug: 'patterns/contextengineering' },
         ],
       },
       {
-        label: 'Career & Soft Skills',
+        label: 'Bounded Autonomy',
         items: [
-          { label: 'Overview', slug: 'thelifecycleoperationsgrowth/careersoftskills' },
-          {
-            label: 'System Design Interviews',
-            items: [
-              { label: 'Overview', slug: 'thelifecycleoperationsgrowth/careersoftskills/systemdesigninterviews' },
-            ],
-          },
-          {
-            label: 'Open Source & Personal Branding',
-            items: [
-              { label: 'Overview', slug: 'thelifecycleoperationsgrowth/careersoftskills/opensourcepersonalbranding' },
-            ],
-          },
-          {
-            label: 'Technical Communication',
-            items: [
-              { label: 'Overview', slug: 'thelifecycleoperationsgrowth/careersoftskills/technicalcommunication' },
-            ],
-          },
+          { label: 'Overview', slug: 'patterns/boundedautonomy' },
+        ],
+      },
+    ],
+  },
+  {
+    label: 'The Human Element',
+    items: [
+      { label: 'Overview', slug: 'humanelement' },
+      {
+        label: 'From Coder to Orchestrator',
+        items: [
+          { label: 'Overview', slug: 'humanelement/fromcodertoorchestrator' },
+        ],
+      },
+      {
+        label: 'AI Security',
+        items: [
+          { label: 'Overview', slug: 'humanelement/aisecurity' },
+        ],
+      },
+      {
+        label: 'Ethics and Bias',
+        items: [
+          { label: 'Overview', slug: 'humanelement/ethicsandbias' },
+        ],
+      },
+      {
+        label: 'Governance',
+        items: [
+          { label: 'Overview', slug: 'humanelement/governance' },
+        ],
+      },
+      {
+        label: 'The Psychology of AI-Native Development',
+        items: [
+          { label: 'Overview', slug: 'humanelement/thepsychologyofai-nativedevelopment' },
         ],
       },
     ],
