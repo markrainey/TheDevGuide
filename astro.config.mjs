@@ -5,6 +5,8 @@ import starlightThemeSix from '@six-tech/starlight-theme-six'
 
 // https://astro.build/config
 export default defineConfig({
+	site: 'https://markrainey.github.io',
+	base: '/TheDevGuide',
 	integrations: [
 		starlight({
 			title: 'The Dev Guide',
