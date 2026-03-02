@@ -27,26 +27,32 @@ export default defineConfig({
         label: 'Language & Runtime Deep-Dives',
         items: [
           { label: 'Overview', slug: 'thecraftprogrammingarchitecture/languageruntimedeep-dives' },
-          { label: '100 Days of Code: The Complete Python Pro Bootcamp', slug: 'thecraftprogrammingarchitecture/languageruntimedeep-dives/11fbb6f6-7e62-4610-a4f4-5ae76e312eb2' },
-          { label: 'Python Mega Course: Build 20 Real-World Apps and AI Agents', slug: 'thecraftprogrammingarchitecture/languageruntimedeep-dives/a3530853-1a13-459f-b775-6c7f0fdf423e' },
-          { label: 'The Clean Coder: A Code of Conduct for Professional Programmers (Robert C. Martin Series)', slug: 'thecraftprogrammingarchitecture/languageruntimedeep-dives/c159c9e0-3c08-4bdf-bc4d-19a39b32c0cc' },
-          { label: 'CLR via C# (Developer Reference)', slug: 'thecraftprogrammingarchitecture/languageruntimedeep-dives/0a83189c-a7ac-4e47-88e0-8786525e4da5' },
-          {
-            label: 'Modern JavaScript/TypeScript',
-            items: [
-              { label: 'Overview', slug: 'thecraftprogrammingarchitecture/languageruntimedeep-dives/modernjavascripttypescript' },
-            ],
-          },
+          { label: 'The Clean Coder: A Code of Conduct for Professional Programmers', slug: 'thecraftprogrammingarchitecture/languageruntimedeep-dives/c159c9e0-3c08-4bdf-bc4d-19a39b32c0cc' },
           {
             label: 'Systems Programming (Rust/Go)',
             items: [
               { label: 'Overview', slug: 'thecraftprogrammingarchitecture/languageruntimedeep-dives/systemsprogrammingrustgo' },
+              {
+                label: 'Modern JavaScript/TypeScript',
+                items: [
+                  { label: 'Overview', slug: 'thecraftprogrammingarchitecture/languageruntimedeep-dives/systemsprogrammingrustgo/modernjavascripttypescript' },
+                  { label: 'Python Mega Course: Build 20 Real-World Apps and AI Agents', slug: 'thecraftprogrammingarchitecture/languageruntimedeep-dives/systemsprogrammingrustgo/modernjavascripttypescript/a3530853-1a13-459f-b775-6c7f0fdf423e' },
+                ],
+              },
             ],
           },
           {
-            label: 'AI-First Python',
+            label: 'Python',
             items: [
-              { label: 'Overview', slug: 'thecraftprogrammingarchitecture/languageruntimedeep-dives/ai-firstpython' },
+              { label: 'Overview', slug: 'thecraftprogrammingarchitecture/languageruntimedeep-dives/python' },
+              { label: '100 Days of Code: The Complete Python Pro Bootcamp', slug: 'thecraftprogrammingarchitecture/languageruntimedeep-dives/python/11fbb6f6-7e62-4610-a4f4-5ae76e312eb2' },
+            ],
+          },
+          {
+            label: 'C# / .NET',
+            items: [
+              { label: 'Overview', slug: 'thecraftprogrammingarchitecture/languageruntimedeep-dives/cnet' },
+              { label: 'CLR via C# (Developer Reference)', slug: 'thecraftprogrammingarchitecture/languageruntimedeep-dives/cnet/0a83189c-a7ac-4e47-88e0-8786525e4da5' },
             ],
           },
         ],
@@ -111,6 +117,8 @@ export default defineConfig({
         label: 'AI Integration & Agentic Frameworks',
         items: [
           { label: 'Overview', slug: 'thestacktechnologyintegration/aiintegrationagenticframeworks' },
+          { label: 'The Rise of The Claw with OpenClaw\'s Peter Steinberger', slug: 'thestacktechnologyintegration/aiintegrationagenticframeworks/c903e74a-c8c1-4d96-977f-d0e21eca24fb' },
+          { label: 'From idea to pull request: A practical guide to building with GitHub Copilot CLI', slug: 'thestacktechnologyintegration/aiintegrationagenticframeworks/46ebf64f-423c-471a-bb81-776ffe245056' },
           {
             label: 'LLM Orchestration',
             items: [

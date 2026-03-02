@@ -9,6 +9,7 @@ export const collections = {
 			extend: z.object({
 				rating: z.number().min(0).max(5).optional(),
 				ratingCount: z.number().optional(),
+				type: z.enum(['book', 'video', 'course', 'article']).optional(),
 			}),
 		}),
 	}),

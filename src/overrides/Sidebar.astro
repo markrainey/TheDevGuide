@@ -1,12 +1,23 @@
 ---
 import SidebarSublist from './SidebarSublist.astro'
+import { getCollection } from 'astro:content'
 
 const { sidebar } = Astro.locals.starlightRoute
+
+const docs = await getCollection('docs')
+const typeMap = new Map(
+  docs
+    .filter(doc => doc.data.type)
+    .map(doc => {
+      const slug = '/' + doc.id.replace(/\.mdx?$/, '').replace(/\/index$/, '') + '/'
+      return [slug, doc.data.type as 'book' | 'video' | 'course' | 'article']
+    })
+)
 ---
 
 <div class="sidebar">
   <div class="container-sidebar">
-    <SidebarSublist sublist={sidebar} />
+    <SidebarSublist sublist={sidebar} typeMap={typeMap} />
   </div>
 </div>
 
