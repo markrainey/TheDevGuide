@@ -15,7 +15,7 @@ This content is vital for moving AI projects into production. You will explore o
 #### 📚 Books & Strategic Frameworks
 * [**Evaluation-Driven Development: A Framework for Building Reliable LLM Applications**](https://medium.com/towardsdev/evaluation-driven-development-a-framework-for-building-reliable-llm-applications-ce1ac3d9cd2e) by *Brinthan Yoganathan (2026)*.
     > **Why read:** This is the current industry blueprint for embedding evaluation into every layer—from model selection to continuous production observability.
-* [**AI Engineering: Building Applications with Foundation Models**](https://www.oreilly.com/library/view/ai-engineering/9781098166267/) by *Chip Huyen (O'Reilly, 2025)*.
+* [**AI Engineering: Building Applications with Foundation Models**](https://amzn.eu/d/0j6rIvun) by *Chip Huyen (O'Reilly, 2025)*.
     > **Why read:** Focus on the "Evaluation" chapter, which introduces the **Four Pillars of Evaluation**: Domain-Specific Capability, Generation Quality, Latency, and Cost Trade-offs.
 
 #### 🎥 Videos & Masterclasses

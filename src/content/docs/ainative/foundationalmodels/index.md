@@ -14,18 +14,16 @@ Someone should read this subsection to understand how to choose the right model 
 ### Recommended Resources
 
 #### 📚 Books
-* [**AI Engineering: Building Applications with Foundation Models**](https://www.oreilly.com/library/view/ai-engineering/9781098166267/) by *Chip Huyen (O'Reilly, 2025)*. 
+* [**AI Engineering: Building Applications with Foundation Models**](https://amzn.eu/d/0j3lyipA) by *Chip Huyen (O'Reilly, 2025)*. 
     > **Why read:** This is the definitive "production" guide. It covers the systems view that most tutorials skip: deployment tradeoffs, reliability, and how to build scalable apps around models.
-* [**Hands-On Large Language Models**](https://www.oreilly.com/library/view/hands-on-large-language/9781098150952/) by *Jay Alammar & Maarten Grootendorst (O'Reilly)*. 
+* [**Hands-On Large Language Models**](https://amzn.eu/d/0fHG0QKw) by *Jay Alammar & Maarten Grootendorst (O'Reilly)*. 
     > **Why read:** Jay Alammar is legendary for his visual explanations. This book builds your mental model of how transformers actually "see" data through world-class illustrations.
-* [**Build a Large Language Model (From Scratch)**](https://www.manning.com/books/build-a-large-language-model-from-scratch) by *Sebastian Raschka*. 
+* [**Build a Large Language Model (From Scratch)**](https://amzn.eu/d/02JSMDgL) by *Sebastian Raschka*. 
     > **Why read:** If you want to truly understand the "black box," there is no substitute for coding the architecture yourself. Essential for deep technical mastery.
 
 #### 🎥 Videos & Lectures
 * [**Stanford CS224N: Natural Language Processing with Deep Learning**](https://web.stanford.edu/class/cs224n/) (Ongoing Series). 
     > **Watch:** While a classic, the 2025/2026 iterations focus heavily on state-space models (SSMs) and advanced reasoning chains.
-* [**State of LLMs 2026: RLVR, GRPO, and Inference Scaling**](https://www.youtube.com/@SebastianRaschka) by *Sebastian Raschka (YouTube)*. 
-    > **Watch:** A masterclass on why "bigger isn't better" anymore and how models use specialized training (like Verifiable Rewards) to unlock latent reasoning.
 * [**The Illustrated Transformer**](http://jalammar.github.io/illustrated-transformer/) by *Jay Alammar (Blog/Video)*. 
     > **Watch/Read:** The "gold standard" introduction to the attention mechanism that started the current revolution.
 

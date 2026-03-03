@@ -12,12 +12,6 @@ Someone should read this to understand how to manage Autonomous Operations. We c
 
 ### Recommended Resources
 
-#### 📚 Books & Strategic Guides
-* [**AI-Driven DevOps: A Guide to AIOps & Intelligent Automation**](https://www.amazon.com/AI-Driven-DevOps-Intelligent-Automation-Predictive/dp/1835084961) by *Sanjeev Sharma*.
-    > **Why read:** This book outlines the shift from reactive to predictive operations, teaching you how to use AI to forecast system failures and automate recovery workflows.
-* [**Effective AIOps: From Monitoring to Meaningful Action**](https://www.oreilly.com/library/view/effective-aiops/9781098135164/) by *Example Author (O'Reilly)*.
-    > **Why read:** A practical guide for engineers on how to implement "Causal AI" (AI that understands *why* something broke) rather than just "Correlation AI."
-
 #### 🎥 Videos & Platform Masterclasses
 * [**Dynatrace Davis AI: Solving Root Cause in Seconds**](https://www.youtube.com/watch?v=FjH44u9F6iY) by *Dynatrace*.
     > **Watch:** See how "Causal AI" analyzes billions of dependencies in real-time to pinpoint the exact line of code or infrastructure change that caused a production outage.

@@ -14,12 +14,12 @@ Readers will learn strategies for managing the "Mental Context Switch" when jump
 
 #### 📚 Books & Professional Philosophy
 
-* [**Co-Intelligence: Living and Working with AI**](https://www.penguinrandomhouse.com/books/747124/co-intelligence-by-ethan-mollick/) by *Ethan Mollick*.
-> **Why read:** This is the essential psychological roadmap for 2026. Mollick explores why we must treat AI as a "talented but fallible intern" and how to navigate the ego-shift required to collaborate with non-human intelligence.
+* [**Co-Intelligence: Living and Working with AI**](https://amzn.eu/d/09o7IZmY) by *Ethan Mollick*.
+**Why read:** This is the essential psychological roadmap for 2026. Mollick explores why we must treat AI as a "talented but fallible intern" and how to navigate the ego-shift required to collaborate with non-human intelligence.
 
 
-* [**The Product-Minded Engineer**](https://blog.pragmaticengineer.com/the-product-minded-engineer/) by *Gergely Orosz (The Pragmatic Engineer)*.
-> **Why read:** Focuses on the "identity pivot" from coder to builder. It argues that your value in 2026 is defined by your empathy for the user and your business intuition, not your ability to memorize APIs.
+* [**The Product-Minded Engineer**](https://amzn.eu/d/09fvQp5z) by *Gergely Orosz (The Pragmatic Engineer)*.
+**Why read:** Focuses on the "identity pivot" from coder to builder. It argues that your value in 2026 is defined by your empathy for the user and your business intuition, not your ability to memorize APIs.
 
 
 

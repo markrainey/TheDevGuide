@@ -13,9 +13,9 @@ This content is vital for understanding Predictive Modeling in architecture. You
 ### Recommended Resources
 
 #### 📚 Books & Foundational Theory
-* [**Designing Data-Intensive Applications (Book-Based Course)**](https://www.oreilly.com/library/view/designing-data-intensive-applications/9781491903063/) by *Martin Kleppmann*.
+* [**Designing Data-Intensive Applications (Book-Based Course)**](https://amzn.eu/d/03gOcvzZ) by *Martin Kleppmann*.
     > **Why read:** Even in the AI era, this is the "bible" of system design. It provides the fundamental knowledge (replication, partitioning, consistency) that you need to verify if an AI-generated architecture is actually sound.
-* [**AI Engineering: Building Applications with Foundation Models**](https://www.oreilly.com/library/view/ai-engineering/9781098166267/) by *Chip Huyen (O'Reilly, 2025)*.
+* [**AI Engineering: Building Applications with Foundation Models**](https://amzn.eu/d/0aWPmF9b) by *Chip Huyen (O'Reilly, 2025)*.
     > **Why read:** Focus on the "System Design" chapters. Huyen explains how to architect for "cascading failures" in AI systems and how to manage the unique data flow requirements of RAG and agentic workflows.
 
 #### 🎥 Videos & Masterclasses

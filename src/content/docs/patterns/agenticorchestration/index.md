@@ -13,11 +13,11 @@ Someone should read this to understand how to build systems that can work autono
 ### Recommended Resources
 
 #### 📚 Books & Foundational Theory
-* [**Building Agentic AI Systems: Create Intelligent, Autonomous AI Agents**](https://www.amazon.com/Building-Agentic-AI-Systems-Intelligent/dp/1836200213) by *Anjanava Biswas and Wrick Talukdar (2025)*.
+* [**Building Agentic AI Systems: Create Intelligent, Autonomous AI Agents**](https://amzn.eu/d/0bd7UZlq) by *Anjanava Biswas and Wrick Talukdar (2025)*.
     > **Why read:** This is the comprehensive manual for the agentic era. It covers the move from "one-shot" reasoning to iterative workflows, planning, and tool-calling architectures.
-* [**AI Engineering: Building Applications with Foundation Models**](https://www.oreilly.com/library/view/ai-engineering/9781098166267/) by *Chip Huyen (O'Reilly, 2025)*.
+* [**AI Engineering: Building Applications with Foundation Models**](https://amzn.eu/d/0j6rIvun) by *Chip Huyen (O'Reilly, 2025)*.
     > **Why read:** Focus on the "Agents" section. Huyen provides a rigorous engineering perspective on how to move from fragile prototypes to production-grade agentic systems that handle failures gracefully.
-* [**The LLM Engineering Handbook**](https://www.llm-engineering.com/) by *Paul Iusztin and Maxime Labonne*.
+* [**The LLM Engineering Handbook**](https://amzn.eu/d/0872JOnp) by *Paul Iusztin and Maxime Labonne*.
     > **Why read:** A deep dive into the practical patterns of 2026, including state management, memory persistence, and agent communication protocols.
 
 #### 🎥 Videos & Framework Comparisons

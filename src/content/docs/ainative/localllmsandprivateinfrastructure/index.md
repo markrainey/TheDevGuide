@@ -13,9 +13,9 @@ This subsection is for the security-conscious developer and the "power user" who
 ### Recommended Resources
 
 #### 📚 Books & Deep Dives
-* [**Build a Large Language Model (From Scratch)**](https://www.manning.com/books/build-a-large-language-model-from-scratch) by *Sebastian Raschka*.
+* [**Build a Large Language Model (From Scratch)**](https://amzn.eu/d/06PItevl) by *Sebastian Raschka*.
     > **Why read:** To run models locally, you need to understand their resource requirements. This book is the best resource for understanding the memory and compute trade-offs of the Transformer architecture.
-* [**AI Engineering: Building Applications with Foundation Models**](https://www.oreilly.com/library/view/ai-engineering/9781098166267/) by *Chip Huyen (O'Reilly, 2025)*.
+* [**AI Engineering: Building Applications with Foundation Models**](https://amzn.eu/d/08MAQt9G) by *Chip Huyen (O'Reilly, 2025)*.
     > **Why read:** Specifically the chapters on **Model Evaluation and Deployment**, which cover how to pick the right quantization level (e.g., 4-bit vs 8-bit) for local hardware without losing too much intelligence.
 
 #### 🎥 Videos & Masterclasses

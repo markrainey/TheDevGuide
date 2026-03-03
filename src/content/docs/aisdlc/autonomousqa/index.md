@@ -13,10 +13,8 @@ This section is essential for any developer looking to maintain high release fre
 ### Recommended Resources
 
 #### 📚 Books & Foundational Guides
-* [**Software Testing with Generative AI**](https://www.manning.com/books/software-testing-with-generative-ai) by *Mark Winteringham (Manning, 2025)*.
+* [**Software Testing with Generative AI**](https://amzn.eu/d/06wJppfz) by *Mark Winteringham (Manning, 2025)*.
     > **Why read:** This is the current "gold standard" for AI-native QA. Winteringham provides a hype-free roadmap for using LLMs to generate synthetic test data, build AI testing agents, and improve test design.
-* [**AI-Powered Test Automation**](https://www.oreilly.com/library/view/ai-powered-test-automation/9781098150000/) by *Example Author (O'Reilly, 2025)*.
-    > **Why read:** A deep dive into the technical architecture of self-healing frameworks and how to move from "checking" to "intelligent quality engineering."
 
 #### 🎥 Videos & Platform Masterclasses
 * [**KaneAI: The World’s First End-to-End Agentic AI Test Agent**](https://www.lambdatest.com/kane-ai) by *LambdaTest (now TestMu)*.

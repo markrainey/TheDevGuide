@@ -12,16 +12,6 @@ This content teaches you how to move from direct control to Trust-Based Supervis
 
 ### Recommended Resources
 
-#### 📚 Books & Future-Gazing
-
-* [**The Age of Co-Creation: Mastering the Human-AI Partnership**](https://www.amazon.com/Age-Co-Creation-Mastering-Human-AI-Partnership/dp/B0D1M7K9G8) by *Example Author (2026)*.
-> **Why read:** This book explores the shift to "Human-in-command," providing a roadmap for how engineers can remain the moral and strategic compass of autonomous systems.
-
-
-* [**Superintelligence vs. Super-Collaboration**](https://www.penguinrandomhouse.com/books/747124/co-intelligence-by-ethan-mollick/) by *Ethan Mollick*.
-> **Why read:** Revisit Mollick’s work for the "Centaur" and "Cyborg" models—identifying which tasks require human intervention and which can be delegated to bound autonomous agents.
-
-
 
 #### 🎥 Videos & Organizational Strategy
 

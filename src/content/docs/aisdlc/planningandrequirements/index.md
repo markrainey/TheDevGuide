@@ -13,9 +13,9 @@ Readers will learn how to use AI to "stress-test" requirements before a single l
 ### Recommended Resources
 
 #### 📚 Books & Strategic Guides
-* [**The AI Product Playbook**](https://www.amazon.com/AI-Product-Playbook-Marily-Nika/dp/1119912753) by *Dr. Marily Nika & Diego Granados*.
+* [**The AI Product Playbook**](https://amzn.eu/d/0hhenIYx) by *Dr. Marily Nika & Diego Granados*.
     > **Why read:** Written by AI Product Leads from Google and Meta, this book provides the foundational frameworks for transitioning from traditional requirements to probabilistic, AI-driven product specs.
-* [**Reimagined: Building Products with Generative AI**](https://www.reimaginedbook.com/) by *Shyvee Shi, Caitlin Cai, & Yiwen Rong*.
+* [**Reimagined: Building Products with Generative AI**](https://amzn.eu/d/0fGe49lw) by *Shyvee Shi, Caitlin Cai, & Yiwen Rong*.
     > **Why read:** This guide features 150+ real-world examples of how to weave Generative AI into the product lifecycle, specifically focusing on identifying where AI adds value in the planning phase.
 
 #### 🎥 Videos & Product Walkthroughs

@@ -13,9 +13,9 @@ Someone should read this to solve the problem of "Context Rot," where an AI star
 ### Recommended Resources
 
 #### 📚 Books & Strategic Guides
-* [**The LLM Engineering Handbook**](https://www.llm-engineering.com/) by *Paul Iusztin & Maxime Labonne (2025)*.
+* [**The LLM Engineering Handbook**](https://amzn.eu/d/0cH84dk4) by *Paul Iusztin & Maxime Labonne (2025)*.
     > **Why read:** This is the definitive manual for the "memory-first" era. It bridges the gap between raw RAG and the complex state management required for persistent agents.
-* [**AI Engineering**](https://www.oreilly.com/library/view/ai-engineering/9781098166267/) by *Chip Huyen (O'Reilly, 2025)*.
+* [**AI Engineering**](https://amzn.eu/d/0j6rIvun) by *Chip Huyen (O'Reilly, 2025)*.
     > **Why read:** Focus on the chapters on **Context Engineering** and **Data Pipelines**. Huyen treats context as a governed asset, covering versioning, compression, and the economics of token usage.
 
 #### 🎥 Videos & Implementation Deep Dives

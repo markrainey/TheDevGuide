@@ -13,9 +13,7 @@ You should read this to master the Review-Driven Development workflow. As veloci
 ### Recommended Resources
 
 #### 📚 Books & Guides
-* [**The AI-First Developer: From Coding to Orchestrating**](https://www.oreilly.com/library/view/ai-native-development/9781098170000/) by *Example Author (O'Reilly, 2025)*.
-    > **Why read:** This guide explores the "Vibe Coding" movement and provides a framework for breaking down large features into "agent-consumable" chunks.
-* [**Co-Intelligence: Living and Working with AI**](https://www.penguinrandomhouse.com/books/747124/co-intelligence-by-ethan-mollick/) by *Ethan Mollick*.
+* [**Co-Intelligence: Living and Working with AI**](https://amzn.eu/d/03Rewf6K) by *Ethan Mollick*.
     > **Why read:** Essential for understanding the "Jagged Frontier" of AI capabilities—knowing exactly where to trust an agent's implementation and where to step in.
 
 #### 🎥 Videos & Implementation Deep Dives

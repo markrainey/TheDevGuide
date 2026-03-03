@@ -13,10 +13,9 @@ Readers will gain a framework for upskilling in Context Orchestration and Strate
 ### Recommended Resources
 
 #### 📚 Books & Philosophy
-* [**Co-Intelligence: Living and Working with AI**](https://www.penguinrandomhouse.com/books/747124/co-intelligence-by-ethan-mollick/) by *Ethan Mollick*.
+* [**Co-Intelligence: Living and Working with AI**](https://amzn.eu/d/09o7IZmY) by *Ethan Mollick*.
     > **Why read:** The definitive guide to the "Jagged Frontier." Mollick explains why you must treat AI as a "talented but fallible intern" and how to navigate the psychological shift of working with non-human intelligence.
-* [**The AI-First Developer: From Coding to Orchestrating**](https://www.oreilly.com/library/view/ai-native-development/9781098170000/) by *O'Reilly (2025/2026)*.
-    > **Why read:** Focuses on "The Managerial Turn" in engineering. It teaches how to break down complex business vibes into machine-actionable specifications.
+
 
 #### 🎥 Videos & Cultural Context
 * [**The Death of Prompt Engineering & The Rise of Intent Engineering**](https://www.youtube.com/watch?v=fferoz-intent-engineering) by *Faisal Feroz*.

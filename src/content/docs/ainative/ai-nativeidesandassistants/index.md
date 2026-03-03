@@ -11,9 +11,9 @@ Traditional text editors have been replaced by AI-native environments that don't
 This subsection covers why you should move beyond VS Code plugins to dedicated AI-native platforms. You’ll explore features like "Composer" or "Cascade" modes, where the editor can write code across multiple files simultaneously, run terminal commands to fix its own errors, and use "Shadow Workspaces" to verify code before you ever see a diff. For the modern developer, the IDE is no longer a static tool; it is a collaborative partner.
 
 #### 📚 Books & Guides
-* [**The AI-Driven Leader: Harnessing AI to Make Faster, Smarter Decisions**](https://www.amazon.com/AI-Driven-Leader-Harnessing-Smarter-Decisions/dp/B0D1M7K9G8) by *Geoff Woods*. 
+* [**The AI-Driven Leader: Harnessing AI to Make Faster, Smarter Decisions**](https://amzn.eu/d/09BxKCuf) by *Geoff Woods*. 
     > **Why read:** While titled for leaders, this is the best guide on the *philosophy* of delegation to AI. It teaches you how to treat your AI-native IDE as a "staff engineer" rather than a tool.
-* [**Co-Intelligence: Living and Working with AI**](https://www.penguinrandomhouse.com/books/747124/co-intelligence-by-ethan-mollick/) by *Ethan Mollick*.
+* [**Co-Intelligence: Living and Working with AI**](https://amzn.eu/d/0aab4rEC) by *Ethan Mollick*.
     > **Why read:** Mollick provides the framework for "Jagged Frontier" development—understanding when to let the IDE take the lead and when to intervene manually.
 
 #### 🎥 Videos & Tutorials

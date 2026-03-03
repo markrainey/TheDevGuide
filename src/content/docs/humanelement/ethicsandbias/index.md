@@ -17,15 +17,15 @@ Someone should read this to understand the "Human-in-the-Loop" (HITL) mandates t
 #### 📚 Books & Regulatory Frameworks
 
 * [**The AI Act: A Practical Guide for Developers**](https://digital-strategy.ec.europa.eu/en/policies/regulatory-framework-ai) by *European Commission*.
-> **Why read:** This is the compliance bible for 2026. It outlines the specific technical documentation and risk management systems required for "high-risk" AI implementations under the August 2026 deadlines.
+**Why read:** This is the compliance bible for 2026. It outlines the specific technical documentation and risk management systems required for "high-risk" AI implementations under the August 2026 deadlines.
 
 
-* [**Ethical Machines: Your Concise Guide to Implementing Responsible AI**](https://www.google.com/search?q=https://www.amazon.com/Ethical-Machines-Concise-Implementing-Responsible/dp/1647823912) by *Reid Blackman*.
-> **Why read:** A high-level but actionable guide that helps engineers identify "Ethical Debt" before it scales, focusing specifically on privacy, bias, and explainability in autonomous agents.
+* [**Ethical Machines: Your Concise Guide to Implementing Responsible AI**](https://amzn.eu/d/0gi6wU89) by *Reid Blackman*.
+**Why read:** A high-level but actionable guide that helps engineers identify "Ethical Debt" before it scales, focusing specifically on privacy, bias, and explainability in autonomous agents.
 
 
-* [**Co-Intelligence: Living and Working with AI**](https://www.penguinrandomhouse.com/books/747124/co-intelligence-by-ethan-mollick/) by *Ethan Mollick*.
-> **Why read:** Explains the psychological shift of working with AI as a "talented but fallible intern" and how to navigate the "Jagged Frontier" of AI capabilities.
+* [**Co-Intelligence: Living and Working with AI**](https://amzn.eu/d/09o7IZmY) by *Ethan Mollick*.
+**Why read:** Explains the psychological shift of working with AI as a "talented but fallible intern" and how to navigate the "Jagged Frontier" of AI capabilities.
 
 
 
